@@ -4,7 +4,7 @@
 ## Kotobna is a Web-Development project developed using HTML-CSS-JavaScript, by students:
 1. Omar AbdulRahman
 2. Ahmed Tawfik
-3. Adham ALi
+3. Adham Ali
 4. Sondos Akram
 5. Salma Elsayed
 6. Sarah Muhamed
