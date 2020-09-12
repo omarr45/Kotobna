@@ -14,7 +14,7 @@
 Main Orange `#fe4f18`
 Dark Orange `#a6061b`
 Background `#f1e5d9`
-### to change font
+### To change the font
 the `<body>` tag goes like : 
 ```
 <body style="background-color: #f1e5d9; font-family: 'Kumbh Sans', sans-serif;">
