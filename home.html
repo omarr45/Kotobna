@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <title>Kotobna - Home</title>
     <link rel="stylesheet" href="styles/home.css">
+    <style>
+        .slideShow {
+            display: none;
+        }
+    </style>
 </head>
 
-<body style="background-color: #f1e5d9; font-family:Arial, Helvetica, sans-serif;">
+<body style="background-color: #f1e5d9; font-family: 'Kumbh Sans', sans-serif;">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Banner -->
     <img src="assets/logo/Header.jpg" width="100%">
@@ -22,6 +29,46 @@
         <a href="login.html">Login</a>
     </div>
 
+    <!-- Welcome -->
+    <p class="welcome">
+        Welcome to <bdi style="color: #fe4f18;">Kotobna</bdi>!
+    </p>
+    <h1 style="text-align: center;">
+        your #1 bookstore in Egypt
+    </h1>
+
+    <!-- SlideShow -->
+    <div class="slider">
+        <img class="slideShow" src="assets/slideshow/slide1.jpg" style="width: 100%;">
+        <img class="slideShow" src="assets/slideshow/slide2.jpg" style="width: 100%;">
+        <img class="slideShow" src="assets/slideshow/slide3.jpg" style="width: 100%;">
+        <img class="slideShow" src="assets/slideshow/slide4.jpg" style="width: 100%;">
+        <img class="slideShow" src="assets/slideshow/slide5.jpg" style="width: 100%;">
+    </div>
+
+    <!-- Slider Script -->
+    <script>
+        var imageIndex = 0;
+        startSliding();
+
+        function startSliding() {
+            var i;
+            var x = document.getElementsByClassName("slideShow");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            imageIndex++;
+            if (imageIndex > x.length) {
+                imageIndex = 1
+            }
+            x[imageIndex - 1].style.display = "block";
+            setTimeout(startSliding, 1500);
+        }
+    </script>
+
+    <footer style="float: right; padding-bottom: 15px; padding-right: 50px;">
+        &copy; Copyright 2020 FCIS ASU
+    </footer>
 
 
 </body>

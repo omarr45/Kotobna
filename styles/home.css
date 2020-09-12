@@ -21,3 +21,25 @@
     background-color: #fe4f18;
     color: white;
 }
+
+body {
+    background-color: #f1e5d9;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.welcome {
+    font-weight: 700;
+    text-align: center;
+    font-size: 72px;
+}
+
+.slider {
+    border-radius: 30px;
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slideShow {
+    border-radius: 20px;
+}
