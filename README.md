@@ -8,3 +8,18 @@
 4. Sondos Akram
 5. Salma Elsayed
 6. Sarah Muhamed
+
+## for developers:
+### Our main color palette
+Main Orange `#fe4f18`
+Dark Orange `#a6061b`
+Background `#f1e5d9`
+### to change font
+the `<body>` tag goes like : 
+```
+<body style="background-color: #f1e5d9; font-family: 'Kumbh Sans', sans-serif;">
+```
+then inside you put:
+```
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+```
