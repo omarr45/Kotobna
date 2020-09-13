@@ -21,7 +21,8 @@
     background-color: #fe4f18;
     color: white;
 }
-.mainform{
+
+.mainform {
     width: 200px;
     padding: 40px;
     position: absolute;
@@ -32,7 +33,9 @@
     border-radius: 1rem;
     color: rgb(255, 255, 255);
 }
-.mainform input[type = "email"], .mainform input[type = "password"]{
+
+.mainform input[type="email"],
+.mainform input[type="password"] {
     border: 0;
     background: none;
     display: block;
@@ -45,11 +48,14 @@
     color: rgb(255, 255, 255);
     border-radius: 2rem;
 }
-.mainform input[type = "email"]:focus, .mainform input[type = "password"]:focus{
+
+.mainform input[type="email"]:focus,
+.mainform input[type="password"]:focus {
     width: 180px;
     border-color: rgb(235, 59, 15);
 }
-.mainform input[type = "submit"]{
+
+.mainform input[type="submit"] {
     border: 0;
     background: none;
     display: block;
@@ -62,7 +68,8 @@
     cursor: pointer;
     float: right;
 }
-.mainform input[type = "button"]{
+
+.mainform input[type="button"] {
     border: 0;
     background: none;
     display: block;
@@ -75,13 +82,15 @@
     cursor: pointer;
     float: right;
 }
-.mainform input[type = "submit"]:hover{
+
+.mainform input[type="submit"]:hover {
     width: 100px;
     color: rgb(255, 255, 255);
     background-color: #fe4f18;
     box-shadow: 0 0 10px #fe4f18, 0 0 40px #fe4f18, 0 0 80px #fe4f18;
 }
-.mainform input[type = "button"]:hover{
+
+.mainform input[type="button"]:hover {
     width: 100px;
     color: rgb(255, 255, 255);
     background-color: #fe4f18;

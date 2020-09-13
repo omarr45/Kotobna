@@ -14,3 +14,7 @@ function startSliding() {
     x[imageIndex - 1].style.display = "block";
     setTimeout(startSliding, 1500);
 }
+
+function Submit() {
+    alert("You've been succesfully subscribed! Thank you ♥")
+}
