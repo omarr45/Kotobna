@@ -1,14 +1,16 @@
-var myIndex = 0;
-carousel();
+var imageIndex = 0;
+startSliding();
 
-function carousel() {
+function startSliding() {
     var i;
     var x = document.getElementsByClassName("slideShow");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
-    myIndex++;
-    if (myIndex > x.length) { myIndex = 1 }
-    x[myIndex - 1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    imageIndex++;
+    if (imageIndex > x.length) {
+        imageIndex = 1
+    }
+    x[imageIndex - 1].style.display = "block";
+    setTimeout(startSliding, 1500);
 }
