@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="styles/login.css">
 </head>
 
-<body style="background-color: #f1e5d9; font-family:Arial, Helvetica, sans-serif;">
+<body style="background-color: #f1e5d9; font-family: 'Kumbh Sans', sans-serif;">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Banner -->
     <img src="assets/logo/Header.jpg" width="100%">
@@ -21,12 +22,15 @@
         <a href="aboutUs.html">About Us</a>
         <a class="active" href="login.html">Login</a>
     </div>
+    <div class="welcome">
+        <h1>Welcome Back To Kotobna!<br> We missed you</h1>
+    </div>
     <form autocomplete="on" onsubmit="return Validation()" action="home.html" class="mainform" method="POST" name="logForm">
         <h1>Login</h1>
             <input type="email" name="Email" class="info" placeholder="E-mail">
             <input type="password" name="Password" class="info" placeholder="Password">
             <input type="submit" value="Login" id="loginBtn"><br><br><br>
-            <label for="regiter"><strong>Don't have an account</strong></label>
+            <label for="regiter" id="regiText"><strong>Don't have an account</strong></label><br>
             <input type="button" value="Register" id="registerBtn" onclick="Registeration()">
     </form>
     <script type="text/javascript" src="scripts/login.js"></script>
