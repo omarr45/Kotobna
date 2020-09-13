@@ -75,6 +75,7 @@
     border: 0;
     background: none;
     display: block;
+    width: 150px;
     margin: 0px auto;
     text-align: center;
     padding: 15px 25px;
@@ -82,7 +83,7 @@
     color: rgb(255, 255, 255);
     font-size: 20px;
     border-radius: 2rem;
-    transition: 1s;
+    transition: 0.5s;
     cursor: pointer;
     float: right;
 }
@@ -91,6 +92,7 @@
     border: 0;
     background: none;
     display: block;
+    width: 150px;
     margin: 10px auto;
     text-align: center;
     padding: 20px 10px;
@@ -98,20 +100,18 @@
     color: rgb(255, 255, 255);
     font-size: 20px;
     border-radius: 2rem;
-    transition: 1s;
+    transition: 0.5s;
     cursor: pointer;
     float: right;
 }
 
 .mainform input[type="submit"]:hover {
-    width: 150px;
     color: rgb(255, 255, 255);
     background-color: #fe4f18;
     box-shadow: 0 0 10px #fe4f18, 0 0 40px #fe4f18, 0 0 80px #fe4f18;
 }
 
 .mainform input[type="button"]:hover {
-    width: 150px;
     color: rgb(255, 255, 255);
     background-color: #fe4f18;
     box-shadow: 0 0 10px #fe4f18, 0 0 40px #fe4f18, 0 0 80px #fe4f18;
