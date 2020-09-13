@@ -20,6 +20,6 @@ function registeration() {
     }
     else {
         alert("You Have Registered Successfully");
-        window.location.href = "login.html";
+        window.location.href = "home.html";
     }
 }
