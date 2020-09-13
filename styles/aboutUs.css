@@ -21,3 +21,15 @@
     background-color: #fe4f18;
     color: white;
 }
+
+.second {
+    width: 60%;
+    background-color: white;
+    text-align: center;
+    border-radius: 40px;
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 30 px;
+    font-size: 24px;
+    box-shadow: 0 0 10px #333;
+}
