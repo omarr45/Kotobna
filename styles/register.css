@@ -1,3 +1,8 @@
+body{
+    background-color: #f1e5d9;
+    font-family: 'kumbh Sans', sans-serif;
+    color: white;
+}
 .topNav {
     overflow: hidden;
     background-color: #333;
@@ -23,44 +28,31 @@
 }
 .mainform{
     width: 200px;
-    padding: 40px;
+    padding: 30px;
     position: absolute;
-    top: 30%;
+    top: 28%;
     left: 40%;
     background-color: #333;
     text-align: center;
     border-radius: 1rem;
     color: rgb(255, 255, 255);
 }
-.mainform input[type = "email"], .mainform input[type = "password"]{
+.mainform input[type = "email"], .mainform input[type = "password"], .mainform input[type = "text"]{
     border: 0;
     background: none;
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: center;
     border: 2px solid rgb(175, 10, 10);
     padding: 8px;
-    width: 100px;
-    outline: none;
-    color: rgb(0, 0, 0);
-    border-radius: 2rem;
-}
-.mainform input[type = "email"]:focus, .mainform input[type = "password"]:focus{
-    width: 180px;
-    border-color: rgb(235, 59, 15);
-}
-.mainform input[type = "submit"]{
-    border: 0;
-    background: none;
-    display: block;
-    margin: 0px auto;
-    text-align: center;
-    padding: 10px 20px;
+    width: 120px;
     outline: none;
     color: rgb(255, 255, 255);
     border-radius: 2rem;
-    cursor: pointer;
-    float: right;
+}
+.mainform input[type = "email"]:focus, .mainform input[type = "password"]:focus, .mainform input[type = "text"]:focus{
+    width: 180px;
+    border-color: rgb(235, 59, 15);
 }
 .mainform input[type = "button"]{
     border: 0;
@@ -75,14 +67,8 @@
     cursor: pointer;
     float: right;
 }
-.mainform input[type = "submit"]:hover{
-    width: 100px;
-    color: rgb(255, 255, 255);
-    background-color: #fe4f18;
-    box-shadow: 0 0 10px #fe4f18, 0 0 40px #fe4f18, 0 0 80px #fe4f18;
-}
 .mainform input[type = "button"]:hover{
-    width: 100px;
+    width: 150px;
     color: rgb(255, 255, 255);
     background-color: #fe4f18;
     box-shadow: 0 0 10px #fe4f18, 0 0 40px #fe4f18, 0 0 80px #fe4f18;
