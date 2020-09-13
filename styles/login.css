@@ -42,7 +42,7 @@
     padding: 8px;
     width: 100px;
     outline: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border-radius: 2rem;
 }
 .mainform input[type = "email"]:focus, .mainform input[type = "password"]:focus{
