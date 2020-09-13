@@ -21,3 +21,57 @@
     background-color: #fe4f18;
     color: white;
 }
+
+h1 {
+    font-size: 40px;
+}
+
+.request {
+    border-radius: 30px;
+    width: 30%;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #333;
+    box-shadow: 0 0 10px #333;
+}
+
+.request input[type="text"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    border: 2px solid rgb(175, 10, 10);
+    padding: 8px;
+    width: 400px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    border-radius: 2rem;
+}
+
+.request input[type="text"]:focus {
+    box-shadow: 0 0 5px tomato;
+}
+
+.request input[type="button"] {
+    border: 0;
+    background: #fe4f18;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    padding: 10px 20px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.request input[type="button"]:hover {
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: #fe4f18;
+    box-shadow: 0 0 10px #fe4f18, 0 0 40px #fe4f18, 0 0 80px #fe4f18;
+}
