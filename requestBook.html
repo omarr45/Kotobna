@@ -3,27 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Kotobna - Home</title>
+    <title>Kotobna - requests</title>
+    
     <link rel="stylesheet" href="styles/requestBook.css">
     <style type="text/css">
     input[type="text"],select{
-    width:40%;
+        font-size: 19px;
+    width:60%;
     margin: 6px;
-    border: 1px solid #ccc;
+    border: 5px solid #ccc;
 border-radius: 16px;
 }
 input[type="button"]{
-    border-radius: 16px;
+    font-size: 20px;
+    border-radius: 10px;
 
 }
 div{
     border-radius: 5px;
     padding: 20px;
 }
+h1{
+    font-size: 40;
+  margin: 8px0;
+  text-align: center;
+}
+h2{
+    font-size: 30;
+    color:#fe4f18;
+    text-align: center;
+}
+label{
+    font-size: 20px;
+}
 </style>
 <script type="text/javascript">
     function display(){
-        alert("thank you")
+        alert("Thanks!We will try to provide this book as soon as possible")
     }
 </script>
 
@@ -44,15 +60,17 @@ div{
         <a href="aboutUs.html">About Us</a>
         <a href="login.html">Login</a>
     </div>
+    <h1>can't find a book?</h1>
+    <h2>Request it now!</h2>
 <div >
     <form>
         
-<label for="bname">Book's name:</label>
+<label for="bname" >Book's name:</label>
 <input type ="text" id="bname" name ="book'sname" placeholder="enter the name">
 <br>
 <label for="Authorname">Author's name:</label>
 <input type ="text" id="authname" name ="author'sname" placeholder="enter the name"><br>
-    <input type="button" value ="comfirm" onclick ="display()"/>
+    <input type="button" value ="submit" onclick ="display()"/>
 
 </form>
 </div>
