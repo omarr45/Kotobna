@@ -1,8 +1,9 @@
-body{
+body {
     background-color: #f1e5d9;
     font-family: 'kumbh Sans', sans-serif;
     color: white;
 }
+
 .topNav {
     overflow: hidden;
     background-color: #333;
@@ -26,26 +27,32 @@ body{
     background-color: #fe4f18;
     color: white;
 }
-.welcome{
+
+.welcome {
     line-height: 1.8;
-    text-align: center;
+    text-align: left;
     padding: 100px;
     position: absolute;
-    font-size: 40px;
+    font-size: 32px;
     color: #fe4f18;
 }
-.mainform{
+
+.mainform {
     width: 300px;
-    padding: 50px;
+    padding: 30px;
+    margin-bottom: 35px;
     position: absolute;
-    top: 24%;
-    left: 60%;
+    top: 30%;
+    left: 70%;
     background-color: #333;
     text-align: center;
     border-radius: 1rem;
     color: rgb(255, 255, 255);
 }
-.mainform input[type = "email"], .mainform input[type = "password"], .mainform input[type = "text"]{
+
+.mainform input[type="email"],
+.mainform input[type="password"],
+.mainform input[type="text"] {
     border: 0;
     background: none;
     display: block;
@@ -58,11 +65,15 @@ body{
     color: rgb(255, 255, 255);
     border-radius: 2rem;
 }
-.mainform input[type = "email"]:focus, .mainform input[type = "password"]:focus, .mainform input[type = "text"]:focus{
+
+.mainform input[type="email"]:focus,
+.mainform input[type="password"]:focus,
+.mainform input[type="text"]:focus {
     width: 280px;
     border-color: rgb(235, 59, 15);
 }
-.mainform input[type = "button"]{
+
+.mainform input[type="button"] {
     border: 0;
     background: none;
     display: block;
@@ -77,7 +88,8 @@ body{
     transition: 1s;
     float: right;
 }
-.mainform input[type = "button"]:hover{
+
+.mainform input[type="button"]:hover {
     width: 180px;
     color: rgb(255, 255, 255);
     background-color: #fe4f18;

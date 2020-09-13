@@ -21,17 +21,20 @@
     background-color: #fe4f18;
     color: white;
 }
-.welcome{
+
+.welcome {
     line-height: 1.8;
-    text-align: center;
+    text-align: left;
     padding: 100px;
     position: absolute;
-    font-size: 40px;
+    font-size: 32px;
     color: #fe4f18;
 }
+
 .mainform {
     width: 300px;
-    padding: 50px;
+    padding: 30px;
+    margin-bottom: 35px;
     position: absolute;
     top: 30%;
     left: 70%;
@@ -62,7 +65,7 @@
     border-color: rgb(235, 59, 15);
 }
 
-#regiText{
+#regiText {
     font-size: 20px;
     float: left;
     padding-top: 15px;
