@@ -1,0 +1,134 @@
+.myTransitionLeft {
+    animation: transitionLeft 2s;
+}
+
+@keyframes transitionLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.transition {
+    animation: transitionMe 2s;
+}
+
+@keyframes transitionMe {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.topNav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topNav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.topNav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topNav a.active {
+    background-color: #fe4f18;
+    color: white;
+}
+
+.welcome {
+    line-height: 1.8;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 70px;
+    position: absolute;
+    font-size: 32px;
+    color: #fe4f18;
+}
+
+.cry {
+    margin-top: 130px;
+    margin-right: 130px;
+    float: right;
+    width: 300px;
+    height: 300px;
+    animation: cryAnim 2s;
+}
+
+@keyframes cryAnim {
+    from {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.sure {
+    border-radius: 30px;
+    width: 20%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 300px 100px;
+    background-color: #333;
+    box-shadow: 0 0 10px #333;
+}
+
+.sure input[type="email"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(175, 10, 10);
+    padding: 8px;
+    width: 400px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    border-radius: 2rem;
+}
+
+.sure input[type="button"] {
+    border: 0;
+    background: #fe4f18;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    padding: 10px 20px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.sure input[type="button"]:hover {
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: #fe4f18;
+    box-shadow: 0 0 10px #fe4f18, 0 0 40px #fe4f18, 0 0 80px #fe4f18;
+}
+
+.sure input[type="email"]:focus {
+    box-shadow: 0 0 5px tomato;
+}
