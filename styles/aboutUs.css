@@ -1,3 +1,18 @@
+.transition {
+    animation: transitionMe 1.5s;
+}
+
+@keyframes transitionMe {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .topNav {
     overflow: hidden;
     background-color: #333;
