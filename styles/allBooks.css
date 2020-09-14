@@ -36,12 +36,6 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-.select-items div,
-.select-selected {
-    padding-top: 400px;
-    height: 400px;
-}
-
 select {
     padding-top: 13px;
     padding-bottom: 13px;
@@ -54,10 +48,6 @@ select {
     display: inline-block;
     text-align: center;
     font-size: 18px;
-}
-
-option {
-    height: 100px;
 }
 
 .slideShow {
