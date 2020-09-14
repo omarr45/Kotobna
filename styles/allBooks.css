@@ -22,26 +22,42 @@
     color: white;
 }
 
+.topNav a:hover {
+    background-color: #ddd;
+}
+
 .dropdown {
+    position: relative;
     float: left;
     overflow: hidden;
 }
 
+.dropbtn {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.select-items div,
+.select-selected {
+    padding-top: 400px;
+    height: 400px;
+}
+
 select {
-    padding: 12.3px 4px;
-    margin: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    width: 120px;
     color: #f2f2f2;
     background-color: #fe4f18;
     border: none;
     outline: none;
     display: inline-block;
-    margin-bottom: 0;
     text-align: center;
     font-size: 18px;
 }
 
-.topNav a:hover {
-    background-color: #ddd;
+option {
+    height: 100px;
 }
 
 .slideShow {
