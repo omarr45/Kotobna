@@ -9,6 +9,15 @@
 5. Salma Elsayed
 6. Sarah Muhamed
 
+## Features:
+* 10+ Pages
+* Top Navigation Menu
+* Animations and Transitions
+* Input validation using regular expressions
+* Image Slider
+* Admin Page to manage content on website
+* Login - Register
+
 ## for developers:
 ### Our main color palette
 Main Orange `#fe4f18`
