@@ -16,7 +16,7 @@
 * Input validation using regular expressions
 * Image Slider
 * Admin Page to manage content on website
-* Login - Register
+* Login - Logout - Register
 
 ## for developers:
 ### Our main color palette
