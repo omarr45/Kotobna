@@ -18,7 +18,10 @@
 * Admin Page to manage content on website
 * Login - Logout - Register
 
-## for developers:
+<br>
+<br>
+
+## For Developers/Collaborators:
 ### Our main color palette
 Main Orange `#fe4f18`
 Dark Orange `#a6061b`
