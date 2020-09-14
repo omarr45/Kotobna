@@ -9,7 +9,7 @@
 @keyframes transitionIn {
     from {
         opacity: 0;
-        transform: translateY(60px);
+        transform: translateY(-60px);
     }
     to {
         opacity: 1;
