@@ -32,11 +32,7 @@ class Books {
     constructor() {
         this.books = [];
     }
-
-    get allBooks() {
-        return this.books;
-    }
-
+    
     show(category) {
         var container = document.getElementById("blist");
         container.innerHTML = "";
