@@ -3,14 +3,13 @@
     background-color: #333;
 }
 #topbar a {
-     float: left;
+    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 20px;
-	margin-bottom:0;
+	  margin-bottom:0;
     text-decoration: none;
     font-size:18px;
-	display: inline-block;
 }
 #topbar a:hover {
     background-color: #fe4f18;
@@ -34,7 +33,7 @@
   margin: 0; 
 }
 .dropdown2 .dropbtn0 , .dropdown2 .dropbtn1 ,.dropdown2 .dropbtn2 ,.dropdown2 .dropbtn3 ,.dropdown2 .dropbtn4  {
-   float:left;
+  float:left;
   font-size: 18px;
   border: none;
   outline: none;
@@ -86,9 +85,29 @@
 }
 #links a:hover{ 
 
-   color: #f2f2f2; 
-        background: #fe4f18; 
-        box-shadow: 0 0 50px #fe4f18;
-		padding: 19px 20px;
+  color: #f2f2f2; 
+  background: #fe4f18; 
+  box-shadow: 0 0 50px #fe4f18;
+	padding: 19px 20px;
 
+}
+
+figure.card {
+  width: 250px;
+  height: 400px;
+  background-color: white;
+  text-align: center;
+  float: left;
+}
+p.title, p.author, p.category{
+  margin: 10px 0 0 0;
+}
+p.title{
+  font-weight: bolder;
+}
+p.author{
+  
+}
+p.cateory{
+  
 }

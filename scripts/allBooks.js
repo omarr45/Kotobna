@@ -12,16 +12,24 @@ class Book {
         cover.height = 300;
         cover.src = this.imgSrc;
 
+        var eTitle = document.createElement("p");
+        var eAuthor = document.createElement("p");
+        var eCategory = document.createElement("p");
+        
+        eTitle.innerHTML = this.title;
+        eTitle.className = "title";
+        eAuthor.innerHTML = this.author;
+        eAuthor.className = "author";
+        eCategory.innerHTML = this.category;
+        eCategory.className = "category";
+        
         var figcap = document.createElement("figcaption");
-        figcap.innerHTML += this.author + "<br>";
-        figcap.innerHTML += this.title + "<br>";
-        figcap.innerHTML += this.category + "<br>";
-
+        figcap.appendChild(eTitle);
+        figcap.appendChild(eAuthor);
+        figcap.appendChild(eCategory);
 
         var fig = document.createElement("figure");
-        fig.style.width = "250px";
-        fig.style.height = "400px";
-        fig.style.float = "left";
+        fig.className = "card";
         fig.appendChild(cover);
         fig.appendChild(figcap);
 
