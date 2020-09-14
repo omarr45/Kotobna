@@ -45,6 +45,10 @@ select{
 
 }
 
+.slideShow {
+  display: none;
+}
+
 figure.card {
   width: 250px;
   height: 400px;
@@ -62,6 +66,6 @@ p.title{
 p.author{
   Color:white;
 }
-p.cateory{
+p.category{
   color:#fe4f18;
 }

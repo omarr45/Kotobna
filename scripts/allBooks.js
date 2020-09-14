@@ -42,7 +42,8 @@ class Books {
     }
     
     show(category) {
-        var container = document.getElementById("blist");
+        var container = document.createElement("div");
+        document.body.appendChild(container);
         container.innerHTML = "";
 
         for (let i = 0; i < this.books.length; i++) {
