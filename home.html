@@ -27,18 +27,19 @@
         <a href="requestBook.html">Request A Book</a>
         <a href="aboutUs.html">About Us</a>
         <a href="login.html">Login</a>
+        <a href="logout.html">Logout</a>
     </div>
 
     <!-- Welcome -->
-    <p class="welcome">
+    <p class="welcome transition">
         Welcome to <bdi style="color: #fe4f18;">Kotobna</bdi>!
     </p>
-    <h1 style="text-align: center;">
-        your #1 bookstore in Egypt
+    <h1 class="transition" style="text-align: center; margin-top: -30px;">
+        your #1 online library in Egypt
     </h1>
 
     <!-- SlideShow -->
-    <div class="slider">
+    <div class="slider transition">
         <img class="slideShow" src="assets/slideshow/slide1.jpg">
         <img class="slideShow" src="assets/slideshow/slide2.jpg">
         <img class="slideShow" src="assets/slideshow/slide3.jpg">
@@ -49,7 +50,15 @@
     <!-- Slider Script -->
     <script src="scripts/home.js"></script>
 
-    <footer style="float: right; padding-bottom: 15px; padding-right: 50px;">
+    <!-- Subscribe to our newsletter -->
+    <form class="newsletter transition">
+        <h1>Subscribe to our newsletter!</h1>
+        <input type="email" name="Email" class="info" placeholder="johndoe@example.com">
+        <input type="button" value="Subscribe" onclick="Submit()">
+        <br>
+    </form>
+
+    <footer style="float: right; padding-bottom: 15px; padding-right: 30px;">
         &copy; Copyright 2020 FCIS ASU
     </footer>
 

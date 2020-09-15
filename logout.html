@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kotobna - Home</title>
+    <link rel="stylesheet" href="styles/logout.css">
+</head>
+
+<body style="background-color: #f1e5d9; font-family: 'Kumbh Sans', sans-serif;">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Banner -->
+    <img src="assets/logo/Header.jpg" width="100%">
+
+    <!-- Navigator -->
+    <div class="topNav">
+        <a href="home.html">Home</a>
+        <a href="bestSellers.html">Best Sellers</a>
+        <a href="allBooks.html">All Books</a>
+        <a href="requestBook.html">Request A Book</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="login.html">Login</a>
+        <a class="active" href="logout.html">Logout</a>
+    </div>
+
+    <!-- Goodbye -->
+    <div class="welcome myTransitionLeft">
+        <h1>We are sorry to see you go..</h1>
+    </div>
+
+    <img class="cry" src="assets/logout.png">
+
+    <!-- Are you sure? -->
+    <form class="sure transition">
+        <h1>Are you sure?</h1>
+        <input type="button" value="YES Log me out" onclick="LogMeOut()">
+        <br>
+    </form>
+
+    <!-- LogOutScript -->
+    <script src="scripts/logout.js"></script>
+
+</body>
+
+</html>

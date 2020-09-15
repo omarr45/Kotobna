@@ -2,28 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Kotobna - Home</title>
+    <meta charset="UTf-8">
+    <title>All Books</title>
     <link rel="stylesheet" href="styles/allBooks.css">
+
 </head>
 
-<body style="background-color: #f1e5d9; font-family:Arial, Helvetica, sans-serif;">
+<body style="background-color: #f1e5d9; font-family: 'Kumbh Sans', sans-serif;">
 
-    <!-- Banner -->
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
     <img src="assets/logo/Header.jpg" width="100%">
 
-    <!-- Navigator -->
     <div class="topNav">
         <a href="home.html">Home</a>
         <a href="bestSellers.html">Best Sellers</a>
-        <a class="active" href="allBooks.html">All Books</a>
+        <div class="dropdown">
+            <select class="dropbtn">
+                <option style="font-size: 10px;" value="" disabled> <br> </option>
+                <option value="1">All Books</option>
+                <option style="font-size: 10px;" value="" disabled> <br> </option>
+                <option value="2">Novels</option>
+                <option style="font-size: 10px;" value="" disabled> <br> </option>
+                <option value="3">Science</option>
+                <option style="font-size: 10px;" value="" disabled> <br> </option>
+                <option value="4">Kids</option>
+                <option style="font-size: 1px;" value="" disabled> <br> </option>
+                </select>
+        </div>
         <a href="requestBook.html">Request A Book</a>
         <a href="aboutUs.html">About Us</a>
         <a href="login.html">Login</a>
+         <a href="logout.html">Logout</a>
+
     </div>
 
-
-
+    <script src="scripts/allBooks.js"></script>
 </body>
 
 </html>

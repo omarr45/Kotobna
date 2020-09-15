@@ -12,5 +12,9 @@ function startSliding() {
         imageIndex = 1
     }
     x[imageIndex - 1].style.display = "block";
-    setTimeout(startSliding, 1500);
+    setTimeout(startSliding, 2000);
+}
+
+function Submit() {
+    alert("You've been succesfully subscribed! Thank you ♥")
 }

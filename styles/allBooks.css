@@ -21,3 +21,65 @@
     background-color: #fe4f18;
     color: white;
 }
+
+.topNav a:hover {
+    background-color: #ddd;
+}
+
+.dropdown {
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.dropbtn {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+select {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    width: 120px;
+    color: #f2f2f2;
+    background-color: #fe4f18;
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+}
+
+.slideShow {
+    display: none;
+}
+
+figure.card {
+    width: 250px;
+    height: 400px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    float: left;
+    box-shadow: 0 0 10px gray;
+}
+
+p.title,
+p.author,
+p.category {
+    margin: 10px 0 0 0;
+}
+
+p.title {
+    font-weight: bolder;
+    Color: black;
+}
+
+p.author {
+    Color: gray;
+}
+
+p.category {
+    color: #fe4f18;
+}

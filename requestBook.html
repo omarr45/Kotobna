@@ -3,11 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Kotobna - Home</title>
+    <title>Kotobna - requests</title>
+
     <link rel="stylesheet" href="styles/requestBook.css">
 </head>
 
-<body style="background-color: #f1e5d9; font-family:Arial, Helvetica, sans-serif;">
+
+<body style="background-color: #f1e5d9; font-family: 'Kumbh Sans', sans-serif; text-align: center;">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Banner -->
     <img src="assets/logo/Header.jpg" width="100%">
@@ -20,8 +24,23 @@
         <a class="active" href="requestBook.html">Request A Book</a>
         <a href="aboutUs.html">About Us</a>
         <a href="login.html">Login</a>
+        <a href="logout.html">Logout</a>
     </div>
 
+    <br>
+    <h1 class="transition">Can't find your favorite book?</h1>
+    <h1 class="transition3" style="font-size: 30; color: #fe4f18;">Request it now!</h1>
+
+    <form class="request transition2" name="req">
+        <label for="bname">Book Name: </label>
+        <input type="text" id="bname" name="book" placeholder="Book Name">
+        <br>
+        <label for="authname">Author: </label>
+        <input type="text" id="authname" name="author" placeholder="Author"><br>
+        <input type="button" value="Submit" onclick="display()" />
+    </form>
+
+    <script type="text/javascript" src="scripts/requestBook.js"></script>
 
 
 </body>
