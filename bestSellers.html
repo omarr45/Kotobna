@@ -5,23 +5,91 @@
     <meta charset="UTF-8">
     <title>Kotobna - Home</title>
     <link rel="stylesheet" href="styles/bestSellers.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Merriweather">
+    <style>
+        .slideShow {
+            display: none;
+        }
+    </style>
 </head>
 
-<body style="background-color: #f1e5d9; font-family:Arial, Helvetica, sans-serif;">
-
+<body style="background-color: #f1e5d9; font-family: 'Merriweather', sans-serif;">
     <!-- Banner -->
     <img src="assets/logo/Header.jpg" width="100%">
 
     <!-- Navigator -->
     <div class="topNav">
-        <a href="home.html">Home</a>
-        <a class="active" href="bestSellers.html">Best Sellers</a>
+        <a class="active" href="home.html">Home</a>
+        <a href="bestSellers.html">Best Sellers</a>
         <a href="allBooks.html">All Books</a>
         <a href="requestBook.html">Request A Book</a>
         <a href="aboutUs.html">About Us</a>
         <a href="login.html">Login</a>
     </div>
 
+    <p class="bestSellers">
+        Best Sellers
+    </p>
+    <h1 class = "bestSellersFooter">
+        Our most popular products based on market sales. Updated hourly!
+    </h1>
+
+	<div class="grid-container">
+		<div class="first banner">
+            <img class="banner_cover" src="assets/covers/banners/harry_potter_and the_order_of_the_phoenix_book.jpeg" width="100%">
+            <div class="banner_container">
+              <h1 class="banner_author">JK, ROWLING</h1> 
+              <h1 class="banner_name">Harry Potter And The Order
+                Of The Phoenix</h1> 
+              <h1 class="banner_category">Novelty</h1> 
+            </div>
+          </div>
+		<div class="card second">
+            <img class="cover" src="assets/covers/standard/awlad_haretna.jpg" width="100%">
+            <div class="container">
+              <h1 class="author">NAGIB MAHFOUZ</h1> 
+              <h1 class="name">أولاد حارتنا</h1> 
+              <h1 class="category">Novelty</h1> 
+            </div>
+        </div>
+		<div class="card">
+            <img class="cover" src="assets/covers/standard/where_the_crawdads_sing.jpg" width="100%">
+            <div class="container">
+              <h1 class="author">DELIA OWENS</h1> 
+              <h1 class="name">Where The Crawdads Sing</h1> 
+              <h1 class="category">Novelty</h1> 
+            </div>
+        </div>
+		<div class="card">
+            <img class="cover" src="assets/covers/standard/the_da_vinci_code.jpg" width="100%">
+            <div class="container">
+              <h1 class="author">DAN BROWN</h1> 
+              <h1 class="name">The Da vinci Code</h1> 
+              <h1 class="category">Novelty</h1> 
+            </div>
+        </div>
+		<div class="card">
+            <img class="cover" src="assets/covers/standard/the_great_gatspy.jpg" width="100%">
+            <div class="container">
+              <h1 class="author">SCOTT FITZGERALD</h1> 
+              <h1 class="name">The Great Gatspy</h1> 
+              <h1 class="category">Fiction</h1> 
+            </div>
+        </div>
+		<div class="card">
+            <img class="cover" src="assets/covers/standard/me_and_a_guy_named_elvis_presly.jpg" width="100%">
+            <div class="container">
+              <h1 class="author">JERRY SCHILLING</h1> 
+              <h1 class="name">Me And A Guy Named Elvis Presly</h1> 
+              <h1 class="category">Biography</h1> 
+            </div>
+        </div>
+	  </div>
+
+    <footer style="float: right; margin-top: 50px; padding-bottom: 15px; padding-right: 50px;">
+        &copy; Copyright 2020 FCIS ASU
+    </footer>
 
 
 </body>

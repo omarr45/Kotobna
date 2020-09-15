@@ -21,3 +21,137 @@
     background-color: #fe4f18;
     color: white;
 }
+
+.bestSellers{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 72px;
+    color: #fe4f18;
+}
+
+.bestSellersFooter{
+    text-align: center; 
+    margin-top: 0px;    
+    font-size: 36px;
+}
+
+.first { grid-area: first; }
+.second { grid-area: second; }
+.third { grid-area: third; }
+.forth { grid-area: forth; }
+.fifth { grid-area: fifth; }
+.sixth { grid-area: sixth; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'first first first first first'
+      'second third forth fifth sixth';
+    margin-top: 70px;
+    grid-gap: 20px;
+    row-gap: 40px;
+    padding: 30px;
+  }
+  
+  .grid-container > div {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .card {
+    overflow-y: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    background-color: #FFF;
+    width: 250px;
+    height: 530px;
+    
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+  .cover{
+    width: 230px;
+    height: 330px;
+    border-radius: 15px;
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.4);
+}
+
+  .author{
+    font-size: 20px;
+    margin-top: 20px;
+    color: #555555;
+  }
+  
+  .name{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 10px;
+    color: #555555;
+}
+
+.category{
+    font-size: 14px;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    color: #FE4F18;
+}
+
+.banner {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0px 16px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  width: 100%;
+  height: 300px;
+}
+
+.banner:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+
+.banner_cover{
+border-radius: 15px;
+box-shadow: 0 0px 16px 0 rgba(0,0,0,0.4);
+margin: 20px;
+margin-right: 50px;
+
+width: 230px;
+height: 250px;
+
+float: left;
+}
+
+.banner_container{
+  text-align: left;
+}
+
+.banner_author{
+  font-size: 24px;
+  margin-top: 50px;
+  color: #555555;
+}
+
+.banner_name{
+  margin-top: 0px;
+  font-size: 54px;
+  font-weight: bold;
+  color: #555555;
+}
+
+.banner_category{
+  margin-top: -25px;
+  font-size: 18px;
+  color: #FE4F18;
+}
