@@ -5,7 +5,8 @@
     <meta charset="UTf-8">
     <title>All Books</title>
     <link rel="stylesheet" href="styles/allBooks.css">
-
+    <link rel="stylesheet" href="styles/book.css">
+    
 </head>
 
 <body style="background-color: #f1e5d9; font-family: 'Kumbh Sans', sans-serif;">
@@ -18,7 +19,7 @@
         <a href="home.html">Home</a>
         <a href="bestSellers.html">Best Sellers</a>
         <div class="dropdown">
-            <select class="dropbtn">
+            <select class="dropbtn" onchange="library.show(this.options[this.selectedIndex].text)">
                 <option style="font-size: 10px;" value="" disabled> <br> </option>
                 <option value="1">All Books</option>
                 <option style="font-size: 10px;" value="" disabled> <br> </option>
@@ -32,12 +33,13 @@
         </div>
         <a href="requestBook.html">Request A Book</a>
         <a href="aboutUs.html">About Us</a>
-        <a href="login.html">Login</a>
-         <a href="logout.html">Logout</a>
+        <a href="login.html" id="loginNav">Login</a>
+        <a href="logout.html" id="logoutNav">Logout</a>
 
     </div>
 
     <script src="scripts/allBooks.js"></script>
+    <script src="scripts/loggedChk.js"></script>
 </body>
 
 </html>

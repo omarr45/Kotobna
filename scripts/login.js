@@ -18,3 +18,12 @@ function Validation(){
 function Registeration(){
     window.location.href = 'register.html';
 }
+
+function login()
+{
+    if(Validation())
+    {
+        sessionStorage.setItem("logged", document.logForm.Email.value);
+        window.location.href = "home.html";
+    }
+}

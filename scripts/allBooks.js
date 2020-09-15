@@ -8,9 +8,8 @@ class Book {
 
     show(container) {
         var cover = document.createElement("img");
-        cover.width = 200;
-        cover.height = 300;
         cover.src = this.imgSrc;
+        cover.className = "cover";
 
         var eTitle = document.createElement("p");
         var eAuthor = document.createElement("p");
@@ -24,8 +23,9 @@ class Book {
         eCategory.className = "category";
         
         var figcap = document.createElement("figcaption");
-        figcap.appendChild(eTitle);
+        figcap.className = "container";
         figcap.appendChild(eAuthor);
+        figcap.appendChild(eTitle);
         figcap.appendChild(eCategory);
 
         var fig = document.createElement("figure");
@@ -39,17 +39,17 @@ class Book {
 class Books {
     constructor() {
         this.books = [];
+        this.container = document.createElement("div");
+        document.body.appendChild(this.container);
     }
     
     show(category) {
-        var container = document.createElement("div");
-        document.body.appendChild(container);
-        container.innerHTML = "";
+        this.container.innerHTML = "";
 
         for (let i = 0; i < this.books.length; i++) {
             const element = this.books[i];
             if (category == "all" || element.category == category)
-                element.show(container);
+                element.show(this.container);
         }
     }
     get numberOfBooks() {
@@ -62,4 +62,5 @@ let library = new Books();
 //Book list
 for (let i = 0; i < 20; i++)
     library.books.push(new Book("A Brief History of Time", "Stephen Hawking", "Science", "assets/covers/BriefHistoryOfTime.jpg"));
+///////////////////////
 library.show("all");

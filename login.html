@@ -20,24 +20,24 @@
         <a href="allBooks.html">All Books</a>
         <a href="requestBook.html">Request A Book</a>
         <a href="aboutUs.html">About Us</a>
-        <a class="active" href="login.html">Login</a>
-        <a href="logout.html">Logout</a>
+        <a class="active" href="login.html" id="loginNav">Login</a>
+        <a href="logout.html" id="logoutNav">Logout</a>
     </div>
 
     <div class="welcome myTransitionLeft">
         <h1>Welcome Back To Kotobna!<br>We missed you</h1>
     </div>
 
-    <form autocomplete="on" onsubmit="return Validation()" action="home.html" class="mainform myTransition" method="POST" name="logForm">
+    <form autocomplete="on" class="mainform myTransition" method="POST" name="logForm">
         <h1>Login</h1>
         <input type="email" name="Email" class="info" placeholder="E-mail">
         <input type="password" name="Password" class="info" placeholder="Password">
-        <input type="submit" value="Login" id="loginBtn"><br><br><br>
+        <input type="button" value="Login" id="loginBtn" onclick="login()"><br><br><br>
         <label for="regiter" id="regiText"><strong>Don't have an account?</strong></label><br>
         <input type="button" value="Register" id="registerBtn" onclick="Registeration()">
     </form>
     <script type="text/javascript" src="scripts/login.js"></script>
-
+    <script src="scripts/loggedChk.js"></script>
 
 </body>
 
