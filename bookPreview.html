@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Kotobna - Preview</title>
-        <link rel="stylesheet" href="styles/bookPreview.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Kotobna - Preview</title>
+    <link rel="stylesheet" href="styles/bookPreview.css">
+</head>
 
-    <body style="background-color: #f1e5d9; font-family: 'Kumbh Sans', sans-serif;"> 
+<body style="background-color: #f1e5d9; font-family: 'Kumbh Sans', sans-serif;">
 
-        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
-        <!-- Banner -->
-        <img src="assets/logo/Header.jpg" width="100%">
+    <!-- Banner -->
+    <img src="assets/logo/Header.jpg" width="100%">
 
-        <!-- Navigator -->
-        <div class="topNav">
-            <a  href="home.html">Home</a>
-            <a href="bestSellers.html">Best Sellers</a>
-            <a href="allBooks.html">All Books</a>
-            <a href="requestBook.html">Request A Book</a>
-            <a href="aboutUs.html">About Us</a>
-            <a href="login.html" id="loginNav">Login</a>
-            <a href="logout.html" id="logoutNav">Logout</a>
-        </div>
+    <!-- Navigator -->
+    <div class="topNav">
+        <a href="home.html">Home</a>
+        <a href="bestSellers.html">Best Sellers</a>
+        <a href="allBooks.html">All Books</a>
+        <a href="requestBook.html">Request A Book</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="login.html" id="loginNav">Login</a>
+        <a href="logout.html" id="logoutNav">Logout</a>
+    </div>
 
-        <script src="scripts/bookPreview.js"></script>
-        <script src="scripts/loggedChk.js"></script>
-    </body>
+    <script src="scripts/bookPreview.js"></script>
+    <script src="scripts/loggedChk.js"></script>
+
+    <input type="button" value="Ratings & Reviews" onclick="ReviewMe()" class="myButton">
+
+    <input type="button" value="Read Online" onclick="ReadMe()" class="myButton">
+
+    <input type="button" value="Get your copy" onclick="BuyMe()" class="myButton">
+
+    <script>
+        function ReadMe() {
+            window.open('https://www.fisica.net/relatividade/stephen_hawking_a_brief_history_of_time.pdf', '_blank');
+        }
+
+        function ReviewMe() {
+            window.open('https://www.goodreads.com/book/show/3869.A_Brief_History_of_Time', '_blank');
+        }
+
+        function BuyMe() {
+            window.open('https://egypt.souq.com/eg-en/a-brief-history-of-time-35444799/i/', '_blank');
+        }
+    </script>
+</body>
 
 </html>

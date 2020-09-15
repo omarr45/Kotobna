@@ -17,18 +17,51 @@
     color: black;
 }
 
-img.cover{
-    margin-top: 20px;
-    margin-right: 30px;
+img.cover {
+    margin: 50px;
+    margin-right: 70px;
+    height: 500px;
+    width: 330px;
     float: left;
 }
 
-p.author{
-
+p.title {
+    margin-top: 100px;
+    font-size: 60px;
+    font-weight: bold;
 }
-p.title{
 
+p.author {
+    font-size: 30px;
+    margin-top: -40px;
+    font-style: italic;
 }
-p.category{
 
+p.category {
+    font-size: 20px;
+    margin-top: -10px;
+    /*     font-style: italic;
+ */
+    color: #333;
+}
+
+input[type="button"] {
+    border: 0;
+    background-color: #fe4f18;
+    display: block;
+    width: fit-content;
+    margin-right: 30px;
+    text-align: center;
+    padding: 15px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    float: left;
+}
+
+input[type="button"]:hover {
+    box-shadow: 0 0 10px #fe4f18, 0 0 20px #fe4f18, 0 0 20px #fe4f18;
 }
