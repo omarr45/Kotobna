@@ -7,13 +7,13 @@ class Book {
     }
 
     show(container) {
-        var cover = document.createElement("img");
+        let cover = document.createElement("img");
         cover.src = this.imgSrc;
         cover.className = "cover";
 
-        var eTitle = document.createElement("p");
-        var eAuthor = document.createElement("p");
-        var eCategory = document.createElement("p");
+        let eTitle = document.createElement("p");
+        let eAuthor = document.createElement("p");
+        let eCategory = document.createElement("p");
         
         eTitle.innerHTML = this.title;
         eTitle.className = "title";
@@ -22,15 +22,22 @@ class Book {
         eCategory.innerHTML = this.category;
         eCategory.className = "category";
         
-        var figcap = document.createElement("figcaption");
+        let figcap = document.createElement("figcaption");
         figcap.appendChild(eAuthor);
         figcap.appendChild(eTitle);
         figcap.appendChild(eCategory);
 
-        var fig = document.createElement("figure");
+        let fig = document.createElement("figure");
         fig.className = "card";
         fig.appendChild(cover);
         fig.appendChild(figcap);
+        fig.onclick = function(){
+            sessionStorage.setItem("imgSrc", cover.src);
+            sessionStorage.setItem("author", eAuthor.innerHTML);
+            sessionStorage.setItem("title", eTitle.innerHTML);
+            sessionStorage.setItem("catg", eCategory.innerHTML);
+            window.location.href = "bookPreview.html";
+        }
 
         container.appendChild(fig);
     }
