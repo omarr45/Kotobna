@@ -7,7 +7,7 @@ figure.card {
     height: 530px;
     float: left;
     text-align: center;
-    animation: transitionIn 1s;   
+    animation: transitionIn 1s;
 }
 
 @keyframes transitionIn {
@@ -42,7 +42,7 @@ p.author{
   }
   
 p.title{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     margin: 0 10px;
     color: #555555;
@@ -53,5 +53,6 @@ p.category{
     width: 50%;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 14px;
     color: #FE4F18;
 }
