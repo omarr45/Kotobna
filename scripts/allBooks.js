@@ -66,13 +66,19 @@ class Books {
 let library = new Books();
 
 //Book list
-for (let i = 0; i < 9; i++) {
-    library.books.push(new Book("A Brief History of Time", "Stephen Hawking", "Science", "assets/covers/bhot.jpg"));
-    library.books.push(new Book("Harry Potter And The Order Of The Phoenix", "J.K. Rowling", "Novels", "assets/covers/hpop.jpeg"));
-    library.books.push(new Book("Awlad Haretna", "Naguib Mahfouz", "Novels", "assets/covers/ah.jpg"));
-    library.books.push(new Book("The Da Vinci Code", "Dan Brown", "Novels", "assets/covers/tdvc.jpg"));
-    library.books.push(new Book("The Great Gatsby", "Scott Fitzgerald", "Novels", "assets/covers/tgg.jpg"));
-    library.books.push(new Book("Me And A Guy Named Elvis", "Jerry Schilling", "Biography", "assets/covers/magne.jpg"));
-}
+library.books.push(new Book("A Brief History of Time", "Stephen Hawking", "Science", "assets/covers/bhot.jpg"));
+library.books.push(new Book("Harry Potter And The Order Of The Phoenix", "J.K. Rowling", "Novels", "assets/covers/hpop.jpeg"));
+library.books.push(new Book("Awlad Haretna", "Naguib Mahfouz", "Novels", "assets/covers/ah.jpg"));
+library.books.push(new Book("Astrophysics for People in a Hurry", "Neil DeGrasse Tyson", "Science", "assets/covers/aph.jpg"));
+library.books.push(new Book("The Da Vinci Code", "Dan Brown", "Novels", "assets/covers/tdvc.jpg"));
+library.books.push(new Book("The Great Gatsby", "Scott Fitzgerald", "Novels", "assets/covers/tgg.jpg"));
+library.books.push(new Book("Me And A Guy Named Elvis", "Jerry Schilling", "Biography", "assets/covers/magne.jpg"));
+library.books.push(new Book("Brief Answers To Big Questions", "Stephen Hawking", "Science", "assets/covers/babq.jpg"));
+library.books.push(new Book("The Origin Of Species", "Charles Darwin", "Science", "assets/covers/toos.jpg"));
+library.books.push(new Book("The Pleasure of Finding Things Out", "Richard P. Feynman", "Science", "assets/covers/tpofto.jpg"));
+library.books.push(new Book("Cosmos", "Carl Sagan", "Science", "assets/covers/c.jpg"));
+library.books.push(new Book("Mathematical Principles of Natural Philosophy", "Newton", "Science", "assets/covers/mponp.jpg"));
+library.books.push(new Book("Black Holes And Baby Universes", "Stephen Hawking", "Science", "assets/covers/bhabu.jpg"));
+
 ///////////////////////
 library.show("All Books");
