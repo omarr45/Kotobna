@@ -24,6 +24,7 @@ btnRead.innerHTML = "Ratings & Reviews"
 btnRead.className = "myButton";
 
 let banner = document.createElement("div");
+banner.className = "banner";
 banner.id = "banner"
 banner.appendChild(cover);
 banner.appendChild(title);
@@ -34,9 +35,10 @@ banner.appendChild(btnReview);
 
 document.body.appendChild(banner);
 
-function ReviewMe(){
+function ReviewMe() {
     window.open(sessionStorage.getItem("rate"));
 }
-function ReadMe(){
+
+function ReadMe() {
     window.open(sessionStorage.getItem("read"));
 }

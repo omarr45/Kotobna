@@ -7,7 +7,7 @@ class Book {
         this.rate = rate;
         this.read = read;
     }
-    
+
     show(container) {
         let cover = document.createElement("img");
         cover.src = this.imgSrc;
@@ -33,8 +33,8 @@ class Book {
         fig.className = "card";
 
         let glob = this;
-        
-        fig.onclick = function(){
+
+        fig.onclick = function() {
             sessionStorage.setItem("imgSrc", glob.imgSrc);
             sessionStorage.setItem("author", glob.author);
             sessionStorage.setItem("title", glob.title);
@@ -58,7 +58,7 @@ class Books {
     show() {
         for (let i = 0; i < this.books.length; i++) {
             const element = this.books[i];
-                element.show(this.container);
+            element.show(this.container);
         }
     }
 
@@ -66,21 +66,20 @@ class Books {
 
 let library = new Books();
 ////Best 5 Seller Books
-library.books.push(new Book("Awlad Haretna", "Naguib Mahfouz", "Novels", "assets/covers/ah.jpg"));
+library.books.push(new Book("A Brief History of Time", "Stephen Hawking", "Science", "assets/covers/bhot.jpg", "https://www.goodreads.com/book/show/3869.A_Brief_History_of_Time", "https://www.fisica.net/relatividade/stephen_hawking_a_brief_history_of_time.pdf"));
 library.books.push(new Book("The Da Vinci Code", "Dan Brown", "Novels", "assets/covers/tdvc.jpg"));
-library.books.push(new Book("The Great Gatsby", "Scott Fitzgerald", "Novels", "assets/covers/tgg.jpg"));
 library.books.push(new Book("Murder On The Orient Express", "Agatha Christie", "Novels", "assets/covers/motoe.jpg"));
-library.books.push(new Book("Still Me", "Jojo Moyes", "Novels", "assets/covers/sm.jpg"));
+library.books.push(new Book("Infinite Powers", "Steven Strogatz", "Science", "assets/covers/ip.jpg"));
 /////
 library.show();
 
 //////Harry Potter Book event
-document.getElementById("hBanner").onclick = function(){
-        sessionStorage.setItem("imgSrc", "assets/covers/hpop.jpeg");
-        sessionStorage.setItem("author", "J.K. Rowling");
-        sessionStorage.setItem("title", "Harry Potter And The Order Of The Phoenix");
-        sessionStorage.setItem("catg", "Novels");
-        sessionStorage.setItem("read", "");
-        sessionStorage.setItem("rate", "");
-        window.location.href = "bookPreview.html";
+document.getElementById("hBanner").onclick = function() {
+    sessionStorage.setItem("imgSrc", "assets/covers/hpop.jpeg");
+    sessionStorage.setItem("author", "J.K. Rowling");
+    sessionStorage.setItem("title", "Harry Potter And The Order Of The Phoenix");
+    sessionStorage.setItem("catg", "Novels");
+    sessionStorage.setItem("read", "");
+    sessionStorage.setItem("rate", "");
+    window.location.href = "bookPreview.html";
 }
