@@ -29,14 +29,15 @@
     <script src="scripts/bookPreview.js"></script>
     <script src="scripts/loggedChk.js"></script>
 
-    <input type="button" value="Ratings & Reviews" onclick="ReviewMe()" class="myButton">
+    <input type="button" value="Ratings & Reviews" onclick="ReviewMe()" class="myButton" id="rateButton">
 
-    <input type="button" value="Read Online" onclick="ReadMe()" class="myButton">
+    <input type="button" value="Read Online" onclick="ReadMe()" class="myButton" id="readButton">
 
-    <input type="button" value="Get your copy" onclick="BuyMe()" class="myButton">
+    <input type="button" value="Get your copy" onclick="BuyMe()" class="myButton" id="copyButton">
 
     <script>
         function ReadMe() {
+            let link
             window.open('https://www.fisica.net/relatividade/stephen_hawking_a_brief_history_of_time.pdf', '_blank');
         }
 

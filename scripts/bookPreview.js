@@ -17,6 +17,12 @@ catg.innerHTML = "Category: "
 catg.innerHTML += sessionStorage.getItem("catg");
 catg.className = "category"
 
+/* 
+let rate = document.getElementById("rateButton");
+let read = document.getElementById("readButton");
+let copy = document.getElementById("copyButton");
+*/
+
 document.body.appendChild(cover);
 document.body.appendChild(title);
 document.body.appendChild(author);

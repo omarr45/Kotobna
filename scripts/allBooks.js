@@ -1,9 +1,12 @@
 class Book {
-    constructor(title, author, category, imgSrc) {
+    constructor(title, author, category, imgSrc /*, rate, read, buy */ ) {
         this.title = title;
         this.category = category;
         this.imgSrc = imgSrc;
         this.author = author;
+        /* this.rate = rate;
+        this.read = read;
+        this.buy = buy; */
     }
 
     show(container) {
