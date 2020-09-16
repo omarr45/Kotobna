@@ -24,71 +24,56 @@
 .background{
 font-weight: 700;
     text-align:center;
-    font-size: 40px;
-	margin-left:20px;
-	margin-top:70px;
-}
-.fontsize{
-font-weight: 700;
-    text-align:center;
-    font-size: 40px;
-	margin-left:20px;
-	margin-top:40px;
+    font-size: 55px;
+	margin-top:25px;
 }
 
+
 .buttons{
-	margin-left:30%;	
-}
-.fbuttons{
 	margin-left:30%;
+    width: 55%;
+	padding:60px;
+    background-color: white;
+    text-align: center;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: 80px;
+    font-size: 24px;
+    box-shadow: 0 0 10px #333;	
 }
+
 #btn1,#btn2,#btn3{
 	color:white;
 	background-color:#333;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 30px;
   transition-duration: 0.4s;
-  margin:30px;
+  margin:40px;
   width: 180px;
   height:70px;
-  margin-top:15px;
+  margin-top:25px;
+  margin-bottom:50px;
  border-radius:60px;
   border:none;
  font-family: 'Kumbh Sans';
 
 
 }
-#btn5,#btn6,#btn7{
-color:white;
-	background-color:#333;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  transition-duration: 0.4s;
-  margin:30px;
-  width: 180px;
-  height:70px;
-  margin-top:10px;
-  border-color:black;
-   border-radius:35px;
-   border:none;
-   font-family: 'Kumbh Sans';
-}
+
 #btn1:hover{
 	   color: rgb(255, 255, 255);
     background-color: #fe4f18;
 	border-color:#fe4f18;
-    box-shadow: 0 0 10px #ddd, 0 0 40px #ddd;
+    box-shadow: 0 0 10px #fe4f18, 0 0 40px #fe4f18;
 
 }
 #btn2:hover{ 
 	color: rgb(255, 255, 255);
    background-color: #ffebb7;
 	border-color:#ffebb7;
-    box-shadow: 0 0 10px #ddd, 0 0 40px #ddd;
+    box-shadow: 0 0 10px #ffebb7, 0 0 40px #ffebb7;
 	color:black;
 
 	}
@@ -97,13 +82,7 @@ color:white;
 	 color: rgb(255, 255, 255);
     background-color:#666;
 	border-color:#666;
-    box-shadow: 0 0 10px #ddd, 0 0 40px #ddd;
-}
-#btn5:hover,#btn6:hover,#btn7:hover{
-	  color: rgb(255, 255, 255);
-    background-color: black;
-	border-color:black;
-    box-shadow: 0 0 10px #fe4f18, 0 0 40px #fe4f18;
+    box-shadow: 0 0 10px #666, 0 0 40px #666;
 }
 
 
