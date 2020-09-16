@@ -84,6 +84,7 @@ library.books.push(new Book("Murder On The Orient Express", "Agatha Christie", "
 library.books.push(new Book("The Pleasure of Finding Things Out", "Richard P. Feynman", "Science", "assets/covers/tpofto.jpg"));
 library.books.push(new Book("Cosmos", "Carl Sagan", "Science", "assets/covers/c.jpg"));
 library.books.push(new Book("Great Expectations", "Charles Dickens", "Novels", "assets/covers/ge.jpg"));
+library.books.push(new Book("Concepts of Modern Mathematics", "Ian Stewart", "Novels", "assets/covers/comm.jpg"));
 library.books.push(new Book("Mathematical Principles of Natural Philosophy", "Newton", "Science", "assets/covers/mponp.jpg"));
 library.books.push(new Book("The Great Gatsby", "Scott Fitzgerald", "Novels", "assets/covers/tgg.jpg"));
 library.books.push(new Book("Black Holes And Baby Universes", "Stephen Hawking", "Science", "assets/covers/bhabu.jpg"));
