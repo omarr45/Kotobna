@@ -7,23 +7,22 @@ title.innerHTML = sessionStorage.getItem("title");
 title.className = "title";
 
 let author = document.createElement("p");
-author.innerHTML = "By: ";
-author.innerHTML += sessionStorage.getItem("author");
+author.innerHTML = "By: " + sessionStorage.getItem("author");
 author.className = "author";
 
 
 let catg = document.createElement("p");
-catg.innerHTML = "Category: "
-catg.innerHTML += sessionStorage.getItem("catg");
+catg.innerHTML = "Category: " + sessionStorage.getItem("catg");
 catg.className = "category"
-
-/* 
-let rate = document.getElementById("rateButton");
-let read = document.getElementById("readButton");
-let copy = document.getElementById("copyButton");
-*/
 
 document.body.appendChild(cover);
 document.body.appendChild(title);
 document.body.appendChild(author);
 document.body.appendChild(catg);
+
+function ReviewMe(){
+    window.open(sessionStorage.getItem("rate"));
+}
+function ReadMe(){
+    window.open(sessionStorage.getItem("read"));
+}

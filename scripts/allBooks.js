@@ -1,14 +1,13 @@
 class Book {
-    constructor(title, author, category, imgSrc /*, rate, read, buy */ ) {
+    constructor(title, author, category, imgSrc, rate, read) {
         this.title = title;
         this.category = category;
         this.imgSrc = imgSrc;
         this.author = author;
-        /* this.rate = rate;
+        this.rate = rate;
         this.read = read;
-        this.buy = buy; */
     }
-
+    
     show(container) {
         let cover = document.createElement("img");
         cover.src = this.imgSrc;
@@ -32,15 +31,20 @@ class Book {
 
         let fig = document.createElement("figure");
         fig.className = "card";
-        fig.appendChild(cover);
-        fig.appendChild(figcap);
-        fig.onclick = function() {
-            sessionStorage.setItem("imgSrc", cover.src);
-            sessionStorage.setItem("author", eAuthor.innerHTML);
-            sessionStorage.setItem("title", eTitle.innerHTML);
-            sessionStorage.setItem("catg", eCategory.innerHTML);
+
+        let glob = this;
+        
+        fig.onclick = function(){
+            sessionStorage.setItem("imgSrc", glob.imgSrc);
+            sessionStorage.setItem("author", glob.author);
+            sessionStorage.setItem("title", glob.title);
+            sessionStorage.setItem("catg", glob.category);
+            sessionStorage.setItem("read", glob.read);
+            sessionStorage.setItem("rate", glob.rate);
             window.location.href = "bookPreview.html";
         }
+        fig.appendChild(cover);
+        fig.appendChild(figcap);
 
         container.appendChild(fig);
     }
@@ -69,7 +73,7 @@ class Books {
 let library = new Books();
 
 //Book list
-library.books.push(new Book("A Brief History of Time", "Stephen Hawking", "Science", "assets/covers/bhot.jpg"));
+library.books.push(new Book("A Brief History of Time", "Stephen Hawking", "Science", "assets/covers/bhot.jpg", "https://www.goodreads.com/book/show/3869.A_Brief_History_of_Time", "https://www.fisica.net/relatividade/stephen_hawking_a_brief_history_of_time.pdf"));
 library.books.push(new Book("Harry Potter And The Order Of The Phoenix", "J.K. Rowling", "Novels", "assets/covers/hpop.jpeg"));
 library.books.push(new Book("Awlad Haretna", "Naguib Mahfouz", "Novels", "assets/covers/ah.jpg"));
 library.books.push(new Book("Astrophysics for People in a Hurry", "Neil DeGrasse Tyson", "Science", "assets/covers/aph.jpg"));
