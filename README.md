@@ -15,7 +15,8 @@
 * Animations and Transitions
 * Input validation using regular expressions
 * Image Slider
-* Admin Page to manage content on website
+* Filter books by category
+* Admin Page
 * Login - Logout - Register
 
 ## View the project [here](https://omarr45.github.io/Kotobna/home.html)
