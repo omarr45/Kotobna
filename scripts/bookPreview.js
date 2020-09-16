@@ -16,12 +16,14 @@ catg.innerHTML = "Category: " + sessionStorage.getItem("catg");
 catg.className = "category"
 
 let btnReview = document.createElement("button");
-btnReview.innerHTML = "Read Online"
+btnReview.innerHTML = "Ratings & Reviews"
 btnReview.className = "myButton"
+btnReview.addEventListener("click", ReviewMe);
 
 let btnRead = document.createElement("button");
-btnRead.innerHTML = "Ratings & Reviews"
+btnRead.innerHTML = "Read Online"
 btnRead.className = "myButton";
+btnRead.addEventListener("click", ReadMe);
 
 let banner = document.createElement("div");
 banner.className = "banner";
@@ -30,8 +32,8 @@ banner.appendChild(cover);
 banner.appendChild(title);
 banner.appendChild(author);
 banner.appendChild(catg);
-banner.appendChild(btnRead);
 banner.appendChild(btnReview);
+banner.appendChild(btnRead);
 
 document.body.appendChild(banner);
 
