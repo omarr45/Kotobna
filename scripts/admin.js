@@ -1,17 +1,10 @@
 
-let small = document.getElementById("btn4");
-let med = document.getElementById("btn5");
-let large = document.getElementById("btn6");
-
- function doOrange() {
-   document.body.style.background = "#fe4f18";
- }
- function doYellow() {
+ function doBeige() {
    document.body.style.background = "#ffebb7";
  }
  function doGrey() {
-   document.body.style.background = "grey";
+   document.body.style.background = "#666";
  }
- function doElAssly() {
-   document.body.style.background = "black";
+ function doOriginal() {
+   document.body.style.background = "#f1e5d9";
  }
