@@ -31,7 +31,7 @@ font-weight: 700;
 
 .buttons{
 	margin-left:30%;
-    width: 55%;
+    width: 60%;
 	padding:60px;
     background-color: white;
     text-align: center;
@@ -52,7 +52,10 @@ font-weight: 700;
         transform: translateY(0);
     }
 }
-
+button{
+	border:none;
+	outline:none;
+}
 #btn1,#btn2,#btn3{
 	color:white;
 	background-color:#333;
@@ -65,7 +68,7 @@ font-weight: 700;
   width: 180px;
   height:70px;
   margin-top:25px;
-  margin-bottom:50px;
+  margin-bottom:30px;
  border-radius:60px;
   border:none;
  font-family: 'Kumbh Sans';
@@ -73,27 +76,28 @@ font-weight: 700;
 
 }
 
-#btn1:hover{
-	   color: rgb(255, 255, 255);
-    background-color: #fe4f18;
-	border-color:#fe4f18;
-    box-shadow: 0 0 10px #fe4f18, 0 0 40px #fe4f18;
 
-}
-#btn2:hover{ 
+#btn1:hover{ 
 	color: rgb(255, 255, 255);
    background-color: #ffebb7;
 	border-color:#ffebb7;
     box-shadow: 0 0 10px #ffebb7, 0 0 40px #ffebb7;
-	color:black;
+	color:#333;
 
 	}
-#btn3:hover{
+#btn2:hover{
 
 	 color: rgb(255, 255, 255);
     background-color:#666;
 	border-color:#666;
     box-shadow: 0 0 10px #666, 0 0 40px #666;
+}#btn3:hover{
+
+	 color: rgb(255, 255, 255);
+    background-color:#f1e5d9;
+	border-color:#f1e5d9;
+    box-shadow: 0 0 10px #f1e5d9, 0 0 40px #f1e5d9;
+	color:#333;
 }
 
 
