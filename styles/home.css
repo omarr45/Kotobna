@@ -57,7 +57,7 @@
 
 .newsletter {
     border-radius: 30px;
-    width: 40%;
+    width: fit-content;
     text-align: center;
     color: white;
     padding: 10px;
