@@ -74,14 +74,20 @@ library.books.push(new Book("Harry Potter And The Order Of The Phoenix", "J.K. R
 library.books.push(new Book("Awlad Haretna", "Naguib Mahfouz", "Novels", "assets/covers/ah.jpg"));
 library.books.push(new Book("Astrophysics for People in a Hurry", "Neil DeGrasse Tyson", "Science", "assets/covers/aph.jpg"));
 library.books.push(new Book("The Da Vinci Code", "Dan Brown", "Novels", "assets/covers/tdvc.jpg"));
-library.books.push(new Book("The Great Gatsby", "Scott Fitzgerald", "Novels", "assets/covers/tgg.jpg"));
-library.books.push(new Book("Me And A Guy Named Elvis", "Jerry Schilling", "Biography", "assets/covers/magne.jpg"));
+library.books.push(new Book("Infinite Powers", "Steven Strogatz", "Science", "assets/covers/ip.jpg"));
+library.books.push(new Book("The Mothers", "Brit Bennett", "Novels", "assets/covers/tm.jpeg"));
+library.books.push(new Book("A Christmas Carol", "Charles Dickens", "Novels", "assets/covers/acc.jpg"));
 library.books.push(new Book("Brief Answers To Big Questions", "Stephen Hawking", "Science", "assets/covers/babq.jpg"));
 library.books.push(new Book("The Origin Of Species", "Charles Darwin", "Science", "assets/covers/toos.jpg"));
+library.books.push(new Book("Anna Karenina", "Leo Tolstoy", "Novels", "assets/covers/ak.jpg"));
+library.books.push(new Book("Murder On The Orient Express", "Agatha Christie", "Novels", "assets/covers/motoe.jpg"));
 library.books.push(new Book("The Pleasure of Finding Things Out", "Richard P. Feynman", "Science", "assets/covers/tpofto.jpg"));
 library.books.push(new Book("Cosmos", "Carl Sagan", "Science", "assets/covers/c.jpg"));
+library.books.push(new Book("Great Expectations", "Charles Dickens", "Novels", "assets/covers/ge.jpg"));
 library.books.push(new Book("Mathematical Principles of Natural Philosophy", "Newton", "Science", "assets/covers/mponp.jpg"));
+library.books.push(new Book("The Great Gatsby", "Scott Fitzgerald", "Novels", "assets/covers/tgg.jpg"));
 library.books.push(new Book("Black Holes And Baby Universes", "Stephen Hawking", "Science", "assets/covers/bhabu.jpg"));
+library.books.push(new Book("Still Me", "Jojo Moyes", "Novels", "assets/covers/sm.jpg"));
 
 ///////////////////////
 library.show("All Books");
