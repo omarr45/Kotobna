@@ -40,12 +40,10 @@ p.author {
 p.category {
     font-size: 20px;
     margin-top: -10px;
-    /*     font-style: italic;
- */
     color: #333;
 }
 
-input[type="button"] {
+.myButton {
     border: 0;
     background-color: #fe4f18;
     display: block;
@@ -62,6 +60,12 @@ input[type="button"] {
     float: left;
 }
 
-input[type="button"]:hover {
+.myButton:hover {
     box-shadow: 0 0 10px #fe4f18, 0 0 20px #fe4f18, 0 0 20px #fe4f18;
+}
+
+#banner{
+    margin-top: 20px;
+    overflow: hidden;
+    background-color: white;
 }

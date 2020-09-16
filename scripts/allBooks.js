@@ -53,6 +53,7 @@ class Books {
     constructor() {
         this.books = [];
         this.container = document.createElement("div");
+        this.container.style.marginLeft = "90px";
         document.body.appendChild(this.container);
     }
 
@@ -64,9 +65,6 @@ class Books {
             if (category == "All Books" || element.category == category)
                 element.show(this.container);
         }
-    }
-    get numberOfBooks() {
-        return this.books.length;
     }
 }
 

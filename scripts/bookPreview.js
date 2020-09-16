@@ -15,10 +15,24 @@ let catg = document.createElement("p");
 catg.innerHTML = "Category: " + sessionStorage.getItem("catg");
 catg.className = "category"
 
-document.body.appendChild(cover);
-document.body.appendChild(title);
-document.body.appendChild(author);
-document.body.appendChild(catg);
+let btnReview = document.createElement("button");
+btnReview.innerHTML = "Read Online"
+btnReview.className = "myButton"
+
+let btnRead = document.createElement("button");
+btnRead.innerHTML = "Ratings & Reviews"
+btnRead.className = "myButton";
+
+let banner = document.createElement("div");
+banner.id = "banner"
+banner.appendChild(cover);
+banner.appendChild(title);
+banner.appendChild(author);
+banner.appendChild(catg);
+banner.appendChild(btnRead);
+banner.appendChild(btnReview);
+
+document.body.appendChild(banner);
 
 function ReviewMe(){
     window.open(sessionStorage.getItem("rate"));

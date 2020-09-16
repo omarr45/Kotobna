@@ -34,9 +34,6 @@
 
 .dropbtn {
     font-family: 'Kumbh Sans', sans-serif;
-}
-
-select {
     padding-top: 13px;
     padding-bottom: 13px;
     padding-left: 18px;
@@ -45,11 +42,6 @@ select {
     background-color: #fe4f18;
     border: none;
     outline: none;
-    display: inline-block;
     text-align: center;
     font-size: 18px;
-}
-
-.slideShow {
-    display: none;
 }

@@ -61,7 +61,7 @@
     grid-area: sixth;
 }
 
-.grid-container {
+#grid-container {
     display: grid;
     grid-template-areas: 'first first first first first' 'second third forth fifth sixth';
     margin-top: 70px;
@@ -70,7 +70,7 @@
     padding: 30px;
 }
 
-.grid-container>div {
+#grid-container>div {
     text-align: center;
     padding-top: 10px;
 }
