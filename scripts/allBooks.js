@@ -70,6 +70,10 @@ class Books {
 
 let library = new Books();
 
+function changeCtg(ctg) {
+    var title = document.getElementById("")
+}
+
 //Book list
 library.books.push(new Book("A Brief History of Time", "Stephen Hawking", "Science", "assets/covers/bhot.jpg", "https://www.goodreads.com/book/show/3869.A_Brief_History_of_Time", "https://www.fisica.net/relatividade/stephen_hawking_a_brief_history_of_time.pdf"));
 library.books.push(new Book("Harry Potter And The Order Of The Phoenix", "J.K. Rowling", "Novels", "assets/covers/hpop.jpeg", "https://www.goodreads.com/book/show/1317181.Harry_Potter_and_the_Order_of_the_Phoenix?from_search=true&from_srp=true&qid=yIo5kQ6aD8&rank=2", "https://www.missskirtich.com/uploads/2/3/3/7/23374820/5_-_harry_potter_and_the_order_of_the_phoenix_chapter_37.pdf"));
