@@ -133,6 +133,7 @@
     transition: 0.5s;
     cursor: pointer;
     float: right;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 .mainform input[type="submit"]:hover {

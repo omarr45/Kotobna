@@ -118,6 +118,7 @@ body {
     cursor: pointer;
     transition: 0.5s;
     float: right;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 .mainform input[type="button"]:hover {
