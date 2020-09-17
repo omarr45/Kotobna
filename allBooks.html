@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTf-8">
+        <title>Kotobna - All Books</title>
+        <link rel="stylesheet" href="styles/allBooks.css">
+        <link rel="stylesheet" href="styles/book.css">
 
-<head>
-    <meta charset="UTf-8">
-    <title>Kotobna - All Books</title>
-    <link rel="stylesheet" href="styles/allBooks.css">
-    <link rel="stylesheet" href="styles/book.css">
+    </head>
 
-</head>
+    <body style="background-color: #f1e5d9; font-family: 'Kumbh Sans', sans-serif;">
 
-<body style="background-color: #f1e5d9; font-family: 'Kumbh Sans', sans-serif;">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <img src="assets/logo/Header.jpg" width="100%">
 
-    <img src="assets/logo/Header.jpg" width="100%">
+        <div class="topNav">
+            <a href="home.html">Home</a>
+            <a href="bestSellers.html">Best Sellers</a>
+            <div class="dropdown">
+                <select class="dropbtn" onchange="changeCtg(this.options[this.selectedIndex].text)">
+                    <option style="font-size: 10px;" value="" disabled> <br> </option>
+                    <option value="1">All Books</option>
+                    <option style="font-size: 10px;" value="" disabled> <br> </option>
+                    <option value="2">Novels</option>
+                    <option style="font-size: 10px;" value="" disabled> <br> </option>
+                    <option value="3">Science</option>
+                    <option style="font-size: 10px;" value="" disabled> <br> </option>
+                    <option value="4">Academic Books</option>
+                    <option style="font-size: 1px;" value="" disabled> <br> </option>
+                </select>
+            </div>
+            <a href="requestBook.html">Request A Book</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="login.html" id="loginNav">Login</a>
+            <a href="logout.html" id="logoutNav">Logout</a>
+            <a href="admin.html" id="adminNav">Admin</a>
 
-    <div class="topNav">
-        <a href="home.html">Home</a>
-        <a href="bestSellers.html">Best Sellers</a>
-        <div class="dropdown">
-            <select class="dropbtn" onchange="changeCtg(this.options[this.selectedIndex].text)">
-                <option style="font-size: 10px;" value="" disabled> <br> </option>
-                <option value="1">All Books</option>
-                <option style="font-size: 10px;" value="" disabled> <br> </option>
-                <option value="2">Novels</option>
-                <option style="font-size: 10px;" value="" disabled> <br> </option>
-                <option value="3">Science</option>
-                <option style="font-size: 10px;" value="" disabled> <br> </option>
-                <option value="4">Academic Books</option>
-                <option style="font-size: 1px;" value="" disabled> <br> </option>
-            </select>
         </div>
-        <a href="requestBook.html">Request A Book</a>
-        <a href="aboutUs.html">About Us</a>
-        <a href="login.html" id="loginNav">Login</a>
-        <a href="logout.html" id="logoutNav">Logout</a>
-        <a href="admin.html" id="adminNav">Admin</a>
 
-    </div>
+        <h1 class="change" id="header1">
+            The Best Books Ever!
+        </h1>
 
-    <h1 class="change" id="header1">
-        The Best Books Ever!
-    </h1>
+        <h1 class="myHeader" id="header2">
+            all brought to you here on Kotobna.com
+        </h1>
 
-    <h1 class="myHeader" id="header2">
-        all brought to you here on Kotobna.com
-    </h1>
-
-    <script src="scripts/allBooks.js"></script>
-    <script src="scripts/loggedChk.js"></script>
-</body>
+        <script src="scripts/allBooks.js"></script>
+        <script src="scripts/loggedChk.js"></script>
+    </body>
 
 </html>

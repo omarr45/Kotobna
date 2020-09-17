@@ -71,7 +71,13 @@ class Books {
 let library = new Books();
 
 function changeCtg(ctg) {
-    var title = document.getElementById("")
+    library.show(ctg);
+
+    var title = document.getElementById("header2");
+    if(ctg == "All Books")
+        title.innerHTML = "all brought to you here on Kotobna.com";
+    else
+        title.innerHTML = ctg;
 }
 
 //Book list
