@@ -78,6 +78,9 @@ function changeCtg(ctg) {
         title.innerHTML = "all brought to you here on Kotobna.com";
     else
         title.innerHTML = ctg;
+    
+    title.parentNode.removeChild(title);
+    document.getElementsByTagName("header")[0].appendChild(title);
 }
 
 //Book list
