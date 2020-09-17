@@ -1,3 +1,16 @@
+function changeCtg(ctg) {
+    library.show(ctg);
+
+    var title = document.getElementById("header2");
+    if (ctg == "All Books")
+        title.innerHTML = "all brought to you here on Kotobna.com";
+    else
+        title.innerHTML = ctg;
+
+    title.parentNode.removeChild(title);
+    document.getElementsByTagName("header")[0].appendChild(title);
+}
+
 class Book {
     constructor(title, author, category, imgSrc, rate, read) {
         this.title = title;
@@ -99,7 +112,7 @@ library.books.push(new Book("The Secret History Of The World", " Laura Knight-Ja
 
 library.books.push(new Book("Destiny Disrupted", "Tamim Ansary ", "Academic", "assets/covers/dd.jpg", "https://www.goodreads.com/book/show/34617904-destiny-disrupted?ac=1&from_search=true&qid=isXznH9QrD&rank=1", "https://www.pdfdrive.com/destiny-disrupted-a-history-of-the-world-through-islamic-eyes-e60375009.html"));
 
-library.books.push(new Book("The Oxford History Of The Classical World", "John Boardman ", "Academic","assets/covers/ohocw.jpg", "https://www.goodreads.com/book/show/850652.The_Oxford_History_of_the_Classical_World?ac=1&from_search=true&qid=JTbnUqA4YC&rank=1", "https://www.pdfdrive.com/the-oxford-history-of-the-classical-world-e20948013.html"));
+library.books.push(new Book("The Oxford History Of The Classical World", "John Boardman ", "Academic", "assets/covers/ohocw.jpg", "https://www.goodreads.com/book/show/850652.The_Oxford_History_of_the_Classical_World?ac=1&from_search=true&qid=JTbnUqA4YC&rank=1", "https://www.pdfdrive.com/the-oxford-history-of-the-classical-world-e20948013.html"));
 library.books.push(new Book("Atlas of World History", "Patrick O'Brien", "Academic", "assets/covers/awh.jpg", "https://www.goodreads.com/book/show/352290.Atlas_of_World_History?ac=1&from_search=true&qid=jX84BrE441&rank=2", "https://www.pdfdrive.com/atlas-of-world-history-e34633738.html"));
 library.books.push(new Book("Gray Hat Hacking", "Shon Harris", "Academic", "assets/covers/ghh.jpg", "https://www.goodreads.com/book/show/41643400-gray-hat-hacking?from_search=true&from_srp=true&qid=WXt8pC79Px&rank=7", "https://www.pdfdrive.com/gray-hat-hacking-3rd-edition-e24105736.html"));
 library.books.push(new Book("Foreign Exchange and Money Markets", "Bob Steiner", "Academic", "assets/covers/femm.jpg", "https://www.goodreads.com/book/show/3508899-foreign-exchange-and-money-markets-theory-practice-and-risk-management?from_search=true&from_srp=true&qid=69conNkW2z&rank=2", "https://www.pdfdrive.com/foreign-exchange-and-money-markets-e34346730.html"));
