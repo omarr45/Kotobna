@@ -74,7 +74,7 @@ function changeCtg(ctg) {
     library.show(ctg);
 
     var title = document.getElementById("header2");
-    if(ctg == "All Books")
+    if (ctg == "All Books")
         title.innerHTML = "all brought to you here on Kotobna.com";
     else
         title.innerHTML = ctg;
