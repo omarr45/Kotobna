@@ -19,9 +19,10 @@
 * Admin Page
 * Login - Logout - Register
 
+<br>
+
 ## View the project [here](https://omarr45.github.io/Kotobna/home.html)
 
-<br>
 <br>
 
 ## For Developers/Collaborators:
