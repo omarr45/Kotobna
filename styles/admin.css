@@ -21,18 +21,18 @@
     background-color: #fe4f18;
     color: white;
 }
-.background{
-font-weight: 700;
-    text-align:center;
+
+.background {
+    font-weight: 700;
+    text-align: center;
     font-size: 55px;
-	margin-top:25px;
+    margin-top: 25px;
 }
 
-
-.buttons{
-	margin-left:30%;
+.buttons {
+    margin-left: 30%;
     width: 60%;
-	padding:60px;
+    padding: 60px;
     background-color: white;
     text-align: center;
     border-radius: 40px;
@@ -40,8 +40,9 @@ font-weight: 700;
     margin-top: 50px;
     font-size: 24px;
     box-shadow: 0 0 10px #333;
-	 animation: transitionMe 1.5s;
+    animation: transitionMe 1.5s;
 }
+
 @keyframes transitionMe {
     from {
         opacity: 0;
@@ -52,53 +53,51 @@ font-weight: 700;
         transform: translateY(0);
     }
 }
-button{
-	border:none;
-	outline:none;
-}
-#btn1,#btn2,#btn3{
-	color:white;
-	background-color:#333;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  transition-duration: 0.4s;
-  margin:40px;
-  width: 180px;
-  height:70px;
-  margin-top:25px;
-  margin-bottom:30px;
- border-radius:60px;
-  border:none;
- font-family: 'Kumbh Sans';
 
-
+button {
+    border: none;
+    outline: none;
 }
 
+#btn1,
+#btn2,
+#btn3 {
+    color: white;
+    background-color: #333;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    transition-duration: 0.4s;
+    margin: 40px;
+    width: 180px;
+    height: 70px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    border-radius: 60px;
+    border: none;
+    font-family: 'Kumbh Sans';
+}
 
-#btn1:hover{ 
-	color: rgb(255, 255, 255);
-   background-color: #ffebb7;
-	border-color:#ffebb7;
+#btn1:hover {
+    color: rgb(255, 255, 255);
+    background-color: #ffebb7;
+    border-color: #ffebb7;
     box-shadow: 0 0 10px #ffebb7, 0 0 40px #ffebb7;
-	color:#333;
-
-	}
-#btn2:hover{
-
-	 color: rgb(255, 255, 255);
-    background-color:#666;
-	border-color:#666;
-    box-shadow: 0 0 10px #666, 0 0 40px #666;
-}#btn3:hover{
-
-	 color: rgb(255, 255, 255);
-    background-color:#f1e5d9;
-	border-color:#f1e5d9;
-    box-shadow: 0 0 10px #f1e5d9, 0 0 40px #f1e5d9;
-	color:#333;
+    color: #333;
 }
 
+#btn2:hover {
+    color: rgb(255, 255, 255);
+    background-color: #666;
+    border-color: #666;
+    box-shadow: 0 0 10px #666, 0 0 40px #666;
+}
 
-
+#btn3:hover {
+    color: rgb(255, 255, 255);
+    background-color: #f1e5d9;
+    border-color: #f1e5d9;
+    box-shadow: 0 0 10px #f1e5d9, 0 0 40px #f1e5d9;
+    color: #333;
+}
