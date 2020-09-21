@@ -26,6 +26,8 @@
 <br>
 
 ## For Developers/Collaborators:
+### To access the admin page
+login with `admin@kotobna.com` and use any password
 ### Our main color palette
 Main Orange `#fe4f18`
 Dark Orange `#a6061b`
