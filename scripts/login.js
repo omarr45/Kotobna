@@ -1,14 +1,20 @@
-function Validation() {
+function validateEm(elementValue) {
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(elementValue);
+}
+
+function validate() {
     var validation = true;
+
     if (document.logForm.Email.value == "") {
         validation = false;
-        alert("E-mail Can not be EMPTY !!");
-    } else if (document.logForm.Email.value.indexOf("@") == -1 || document.logForm.Email.value.indexOf(".") == -1) {
+        alert("The email can not be empty");
+    } else if (!validateEm(document.logForm.Email.value)) {
         validation = false;
-        alert("Please Enter E-mail Format ex: jackie@gmail.com");
+        alert("Invalid email format");
     } else if (document.logForm.Password.value == "") {
         validation = false;
-        alert("Password Can not be EMPTY !!");
+        alert("The password can not be empty");
     }
     return validation;
 }
@@ -18,7 +24,7 @@ function Registeration() {
 }
 
 function login() {
-    if (Validation()) {
+    if (validate()) {
         sessionStorage.setItem("logged", document.logForm.Email.value);
         window.location.href = "home.html";
     }
