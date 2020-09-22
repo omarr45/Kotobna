@@ -1,5 +1,9 @@
+function validateEm(elementValue) {
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(elementValue);
+}
 function Validation() {
-    
+
     var val=true;
 
     if(document.regisForm.fname.value == "") {
@@ -14,10 +18,10 @@ function Validation() {
         alert("E-mail Can not be EMPTY !!");
         val=false;
     }
-    else if(document.regisForm.Email.value.indexOf("@") == -1 || document.regisForm.Email.value.indexOf(".") == -1)
+    else if(!validateEm(document.regisForm.Email.value))
     {
-        alert("Please Enter E-mail Format eg: jackie@gmail.com");
-        val=false;
+      val = false;
+      alert("Invalid email format");
     }
     else if(document.regisForm.pass.value == "" || document.regisForm.passConfirm.value == ""){
         alert("The Password Can not be EMPTY !!");
