@@ -125,8 +125,8 @@ dropbtn.onchange = function () {
     changeCtg();
 }
 
-searchBox.onkeypress = function() {
-    if(searchBox.value)
+searchBox.onkeyup = function(event) {
+    if(searchBox.value && event.keyCode == 13)
         library.search(searchBox.value, selected);
 }
 
