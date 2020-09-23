@@ -1,16 +1,3 @@
-function changeCtg(ctg) {
-    library.show(ctg);
-
-    var title = document.getElementById("header2");
-    if (ctg == "All Books")
-        title.innerHTML = "all brought to you here on Kotobna.com";
-    else
-        title.innerHTML = ctg;
-
-    title.parentNode.removeChild(title);
-    document.getElementsByTagName("header")[0].appendChild(title);
-}
-
 class Book {
     constructor(title, author, category, imgSrc, rate, read) {
         this.title = title;
@@ -74,9 +61,18 @@ class Books {
         this.container.innerHTML = "";
 
         for (let i = 0; i < this.books.length; i++) {
-            const element = this.books[i];
-            if (category == "All Books" || element.category == category)
-                element.show(this.container);
+            const currBook = this.books[i];
+            if (category == "All Books" || currBook.category == category)
+                currBook.show(this.container);
+        }
+    }
+
+    search(name, ctg){
+        this.container.innerHTML = "";
+        for (let i = 0; i < this.books.length; i++) {
+            const currBook = this.books[i];
+            if((ctg == "All Books" || currBook.category == ctg) && (currBook.title.toLowerCase().includes(name.toLowerCase())|| currBook.author.toLowerCase().includes(name.toLowerCase())))
+                currBook.show(this.container);
         }
     }
 }
@@ -117,3 +113,33 @@ library.books.push(new Book("Concise Physical Chemistry", "Rogers, Donald W.", "
 
 ///////////////////////
 library.show("All Books");
+
+let searchBox = document.getElementById("search");
+
+let dropbtn = document.getElementById("dropbtn");
+
+let selected = dropbtn.options[dropbtn.selectedIndex].text;
+
+dropbtn.onchange = function () {
+    selected = dropbtn.options[dropbtn.selectedIndex].text;
+    changeCtg();
+}
+
+searchBox.onkeypress = function() {
+    if(searchBox.value)
+        library.search(searchBox.value, selected);
+}
+
+function changeCtg() {
+
+    library.show(selected);
+
+    var title = document.getElementById("header2");
+    if (selected == "All Books")
+        title.innerHTML = "all brought to you here on Kotobna.com";
+    else
+        title.innerHTML = selected;
+
+    title.parentNode.removeChild(title);
+    document.getElementsByTagName("header")[0].appendChild(title);
+}

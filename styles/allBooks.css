@@ -70,7 +70,7 @@
     overflow: hidden;
 }
 
-.dropbtn {
+#dropbtn {
     font-family: 'Kumbh Sans', sans-serif;
     padding-top: 13px;
     padding-bottom: 13px;
@@ -84,7 +84,7 @@
     font-size: 18px;
 }
 
-.search {
+#search {
     font-family: 'Kumbh Sans', sans-serif;
     float: right;
     border-radius: 30px;

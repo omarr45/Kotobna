@@ -19,7 +19,7 @@
         <a href="home.html">Home</a>
         <a href="bestSellers.html">Best Sellers</a>
         <div class="dropdown">
-            <select class="dropbtn" onchange="changeCtg(this.options[this.selectedIndex].text)">
+            <select id="dropbtn">
                     <option style="font-size: 10px;" value="" disabled></option>
                     <option value="1">All Books</option>
                     <option value="2">Novels</option>
@@ -32,7 +32,7 @@
         <a href="login.html" id="loginNav">Login</a>
         <a href="logout.html" id="logoutNav">Logout</a>
         <a href="admin.html" id="adminNav">Admin</a>
-        <input type="text" class="search" placeholder="Search..." name="Search" onclick="search()">
+        <input type="text" id="search" placeholder="Search..." name="Search">
 
     </div>
     <header>
