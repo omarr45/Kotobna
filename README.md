@@ -15,6 +15,7 @@
 * Animations and Transitions
 * Input validation using regular expressions
 * Image Slider
+* Search through books
 * Filter books by category
 * Admin Page
 * Login - Logout - Register
