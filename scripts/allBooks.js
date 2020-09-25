@@ -111,7 +111,15 @@ library.books.push(new Book("Foreign Exchange and Money Markets", "Bob Steiner",
 library.books.push(new Book("Abnormal Psychology", "Robin Rosenberg", "Academic", "assets/covers/ap.jpg", "https://www.goodreads.com/book/show/7871252-abnormal-psychology?from_search=true&from_srp=true&qid=v79sN8W3PS&rank=2#", "https://www.pdfdrive.com/abnormal-psychology-e27099525.html"));
 library.books.push(new Book("Concise Physical Chemistry", "Rogers, Donald W.", "Academic", "assets/covers/cpc.jpg", "https://www.goodreads.com/book/show/11735616-concise-physical-chemistry?ac=1&from_search=true&qid=WbiSl7wlpZ&rank=1", "https://www.pdfdrive.com/concise-physical-chemistry-e6110976.html"));
 
-///////////////////////
+function titleComp(a, b){
+    if(a.title < b.title)
+        return -1;
+    else
+        return 1;
+}
+
+library.books.sort(titleComp);
+
 library.show("All Books");
 
 let searchBox = document.getElementById("search");
