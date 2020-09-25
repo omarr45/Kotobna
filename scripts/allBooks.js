@@ -67,11 +67,11 @@ class Books {
         }
     }
 
-    search(name, ctg){
+    search(name, ctg) {
         this.container.innerHTML = "";
         for (let i = 0; i < this.books.length; i++) {
             const currBook = this.books[i];
-            if((ctg == "All Books" || currBook.category == ctg) && (currBook.title.toLowerCase().includes(name.toLowerCase())|| currBook.author.toLowerCase().includes(name.toLowerCase())))
+            if ((ctg == "All Books" || currBook.category == ctg) && (currBook.title.toLowerCase().includes(name.toLowerCase()) || currBook.author.toLowerCase().includes(name.toLowerCase())))
                 currBook.show(this.container);
         }
     }
@@ -111,7 +111,9 @@ library.books.push(new Book("Foreign Exchange and Money Markets", "Bob Steiner",
 library.books.push(new Book("Abnormal Psychology", "Robin Rosenberg", "Academic", "assets/covers/ap.jpg", "https://www.goodreads.com/book/show/7871252-abnormal-psychology?from_search=true&from_srp=true&qid=v79sN8W3PS&rank=2#", "https://www.pdfdrive.com/abnormal-psychology-e27099525.html"));
 library.books.push(new Book("Concise Physical Chemistry", "Rogers, Donald W.", "Academic", "assets/covers/cpc.jpg", "https://www.goodreads.com/book/show/11735616-concise-physical-chemistry?ac=1&from_search=true&qid=WbiSl7wlpZ&rank=1", "https://www.pdfdrive.com/concise-physical-chemistry-e6110976.html"));
 
-library.books.sort((a, b) => a.title > b.title);
+library.books.sort(function(a, b) {
+    return a.title > b.title ? 1 : -1;
+});
 
 library.show("All Books");
 
@@ -121,13 +123,13 @@ let dropbtn = document.getElementById("dropbtn");
 
 let selected = dropbtn.options[dropbtn.selectedIndex].text;
 
-dropbtn.onchange = function () {
+dropbtn.onchange = function() {
     selected = dropbtn.options[dropbtn.selectedIndex].text;
     changeCtg();
 }
 
 searchBox.onkeyup = function(event) {
-    if(searchBox.value && event.keyCode == 13)
+    if (searchBox.value && event.keyCode == 13)
         library.search(searchBox.value, selected);
 }
 
