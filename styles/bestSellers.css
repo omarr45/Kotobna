@@ -37,44 +37,6 @@
     font-size: 40px;
 }
 
-.first {
-    grid-area: first;
-}
-
-.second {
-    grid-area: second;
-}
-
-.third {
-    grid-area: third;
-}
-
-.forth {
-    grid-area: forth;
-}
-
-.fifth {
-    grid-area: fifth;
-}
-
-.sixth {
-    grid-area: sixth;
-}
-
-#grid-container {
-    display: grid;
-    grid-template-areas: 'first first first first first' 'second third forth fifth sixth';
-    margin-top: 70px;
-    grid-gap: 20px;
-    row-gap: 40px;
-    padding: 30px;
-}
-
-#grid-container>div {
-    text-align: center;
-    padding-top: 10px;
-}
-
 .card {
     overflow-y: hidden;
     border-radius: 15px;

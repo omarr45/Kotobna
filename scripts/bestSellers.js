@@ -52,7 +52,7 @@ class Book {
 class Books {
     constructor() {
         this.books = [];
-        this.container = document.getElementById("grid-container");
+        this.container = document.getElementById("grid");
     }
 
     show() {
