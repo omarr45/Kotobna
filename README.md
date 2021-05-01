@@ -23,6 +23,8 @@
 <br>
 
 ## View the project [here](https://omarr45.github.io/Kotobna/home.html)
+Please note that the website is not currently responsive
+
 
 <br>
 
